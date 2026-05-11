@@ -1,0 +1,600 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
+  <meta name="apple-mobile-web-app-title" content="Wait Magic" />
+  <meta name="theme-color" content="#121212" />
+  <link rel="manifest" href="./manifest.json" />
+  <link rel="apple-touch-icon" href="./icon.png" />
+  <title>Wait Magic</title>
+
+  <style>
+    /* ── Reset & base ──────────────────────────────────────────────────── */
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --bg:       #121212;
+      --surface:  #1e1e1e;
+      --card:     #2a2a2a;
+      --accent:   #FFD700;
+      --text:     #ffffff;
+      --sub:      #aaaaaa;
+      --green:    #30d158;
+      --yellow:   #FFD700;
+      --red:      #ff453a;
+      --safe-top: env(safe-area-inset-top);
+      --safe-bot: env(safe-area-inset-bottom);
+    }
+    html, body {
+      height: 100%; background: var(--bg); color: var(--text);
+      font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+      overscroll-behavior: none;
+    }
+    button { background: none; border: none; cursor: pointer; color: inherit; font: inherit; }
+    a { color: inherit; text-decoration: none; }
+
+    /* ── Layout shell ──────────────────────────────────────────────────── */
+    #app {
+      display: flex; flex-direction: column;
+      height: 100vh; height: 100dvh;
+    }
+    #screen {
+      flex: 1; overflow-y: auto;
+      padding-top: calc(var(--safe-top) + 56px);
+      padding-bottom: calc(var(--safe-bot) + 60px);
+    }
+
+    /* ── Top nav bar ────────────────────────────────────────────────────── */
+    #topbar {
+      position: fixed; top: 0; left: 0; right: 0; z-index: 100;
+      height: calc(var(--safe-top) + 56px);
+      padding-top: var(--safe-top);
+      background: var(--surface);
+      border-bottom: 1px solid #333;
+      display: flex; align-items: center; justify-content: center;
+    }
+    #topbar h1 { font-size: 1.1rem; font-weight: 700; letter-spacing: 0.5px; }
+    #topbar .subtitle { font-size: 0.7rem; color: var(--sub); margin-top: 1px; text-align: center; }
+    #topbar .brand { display: flex; flex-direction: column; align-items: center; }
+
+    /* ── Refresh button ─────────────────────────────────────────────────── */
+    #refreshBtn {
+      position: absolute; right: 16px; bottom: 10px;
+      font-size: 1.2rem; padding: 4px;
+      opacity: 0.8;
+      transition: transform 0.4s;
+    }
+    #refreshBtn.spinning { animation: spin 1s linear infinite; }
+    @keyframes spin { to { transform: rotate(360deg); } }
+
+    /* ── Bottom tab bar ─────────────────────────────────────────────────── */
+    #tabbar {
+      position: fixed; bottom: 0; left: 0; right: 0; z-index: 100;
+      height: calc(var(--safe-bot) + 60px);
+      padding-bottom: var(--safe-bot);
+      background: var(--surface);
+      border-top: 1px solid #333;
+      display: flex; align-items: flex-start; padding-top: 6px;
+    }
+    .tab-btn {
+      flex: 1; display: flex; flex-direction: column; align-items: center; gap: 2px;
+      font-size: 0.6rem; color: var(--sub); padding: 4px 0;
+      transition: color 0.2s;
+    }
+    .tab-btn .icon { font-size: 1.4rem; line-height: 1; }
+    .tab-btn.active { color: var(--accent); }
+
+    /* ── Shared content helpers ─────────────────────────────────────────── */
+    .page { display: none; padding: 12px 16px; }
+    .page.active { display: block; }
+
+    .banner {
+      border-radius: 12px; padding: 10px 14px; margin-bottom: 14px;
+      font-size: 0.78rem; font-weight: 600; display: flex; align-items: center; gap: 8px;
+    }
+    .banner.green { background: rgba(48,209,88,0.15); color: var(--green); }
+    .banner.yellow { background: rgba(255,215,0,0.12); color: var(--yellow); }
+    .banner.red { background: rgba(255,69,58,0.15); color: var(--red); }
+
+    /* ── Featured card ──────────────────────────────────────────────────── */
+    .featured-card {
+      background: linear-gradient(135deg, #2a2a1a 0%, #1e1e12 100%);
+      border: 1px solid #3a3a20;
+      border-radius: 16px; padding: 16px; margin-bottom: 16px;
+    }
+    .featured-label {
+      font-size: 0.65rem; font-weight: 700; letter-spacing: 1px;
+      color: var(--accent); text-transform: uppercase; margin-bottom: 8px;
+    }
+    .featured-name { font-size: 1.1rem; font-weight: 700; margin-bottom: 4px; }
+    .featured-park { font-size: 0.8rem; color: var(--sub); margin-bottom: 12px; }
+    .featured-stats { display: flex; gap: 12px; }
+    .stat { flex: 1; text-align: center; }
+    .stat-val { font-size: 1.4rem; font-weight: 700; color: var(--accent); }
+    .stat-label { font-size: 0.65rem; color: var(--sub); margin-top: 2px; }
+
+    /* ── Section header ─────────────────────────────────────────────────── */
+    .section-title {
+      font-size: 0.7rem; font-weight: 700; letter-spacing: 0.8px;
+      text-transform: uppercase; color: var(--sub); margin: 16px 0 8px;
+    }
+
+    /* ── Ride row ───────────────────────────────────────────────────────── */
+    .ride-row {
+      background: var(--card); border-radius: 12px; padding: 12px 14px;
+      margin-bottom: 8px; display: flex; align-items: center; gap: 12px;
+    }
+    .ride-info { flex: 1; min-width: 0; }
+    .ride-name { font-size: 0.9rem; font-weight: 600; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+    .ride-park { font-size: 0.72rem; color: var(--sub); margin-top: 2px; }
+    .ride-wait { text-align: right; }
+    .wait-val { font-size: 1.05rem; font-weight: 700; }
+    .wait-unit { font-size: 0.65rem; color: var(--sub); }
+    .wait-badge {
+      font-size: 0.6rem; font-weight: 700; border-radius: 6px;
+      padding: 2px 6px; margin-top: 3px; display: inline-block;
+    }
+    .wait-badge.low    { background: rgba(48,209,88,0.2);  color: var(--green); }
+    .wait-badge.medium { background: rgba(255,215,0,0.18); color: var(--yellow); }
+    .wait-badge.high   { background: rgba(255,69,58,0.2);  color: var(--red); }
+
+    /* fav star */
+    .fav-btn { font-size: 1.2rem; line-height: 1; padding: 4px; flex-shrink: 0; }
+
+    /* ── Park accordion ─────────────────────────────────────────────────── */
+    .park-section { margin-bottom: 12px; }
+    .park-header {
+      background: var(--surface); border-radius: 12px; padding: 12px 14px;
+      display: flex; align-items: center; gap: 10px; cursor: pointer;
+      border: 1px solid #333;
+    }
+    .park-emoji { font-size: 1.4rem; }
+    .park-name  { font-size: 0.95rem; font-weight: 700; flex: 1; }
+    .park-count { font-size: 0.75rem; color: var(--sub); }
+    .park-chevron { font-size: 0.8rem; color: var(--sub); transition: transform 0.2s; }
+    .park-section.open .park-chevron { transform: rotate(90deg); }
+    .park-rides { display: none; padding-top: 6px; }
+    .park-section.open .park-rides { display: block; }
+
+    /* ── History ────────────────────────────────────────────────────────── */
+    .history-day {
+      background: var(--card); border-radius: 12px; margin-bottom: 10px; overflow: hidden;
+    }
+    .history-day-header {
+      padding: 12px 14px; display: flex; align-items: center; justify-content: space-between;
+      cursor: pointer;
+    }
+    .history-day-title { font-size: 0.9rem; font-weight: 700; }
+    .history-day-sub   { font-size: 0.72rem; color: var(--sub); margin-top: 2px; }
+    .history-day-chevron { font-size: 0.8rem; color: var(--sub); transition: transform 0.2s; }
+    .history-day.open .history-day-chevron { transform: rotate(90deg); }
+    .history-day-rides { display: none; padding: 0 8px 8px; }
+    .history-day.open .history-day-rides { display: block; }
+
+    /* ── Empty / loading states ─────────────────────────────────────────── */
+    .empty {
+      text-align: center; padding: 60px 20px; color: var(--sub); font-size: 0.9rem;
+    }
+    .empty .icon { font-size: 3rem; margin-bottom: 12px; }
+    .loading { text-align: center; padding: 40px; color: var(--sub); }
+    .spinner {
+      width: 32px; height: 32px; border: 3px solid #333;
+      border-top-color: var(--accent); border-radius: 50%;
+      animation: spin 0.8s linear infinite; margin: 0 auto 12px;
+    }
+  </style>
+</head>
+<body>
+<div id="app">
+
+  <!-- Top bar -->
+  <div id="topbar">
+    <div class="brand">
+      <h1>✨ Wait Magic</h1>
+      <div class="subtitle" id="lastUpdatedLabel">Loading…</div>
+    </div>
+    <button id="refreshBtn" title="Refresh">⟳</button>
+  </div>
+
+  <!-- Content area -->
+  <div id="screen">
+
+    <!-- HOME TAB -->
+    <div class="page active" id="page-home">
+      <div id="home-banner"></div>
+      <div id="featured-wrap"></div>
+      <div class="section-title">All Rides by Wait Time</div>
+      <div id="home-rides"></div>
+    </div>
+
+    <!-- PARKS TAB -->
+    <div class="page" id="page-parks">
+      <div id="parks-content"></div>
+    </div>
+
+    <!-- FAVORITES TAB -->
+    <div class="page" id="page-favorites">
+      <div id="fav-content"></div>
+    </div>
+
+    <!-- HISTORY TAB -->
+    <div class="page" id="page-history">
+      <div id="history-content">
+        <div class="loading"><div class="spinner"></div>Loading history…</div>
+      </div>
+    </div>
+
+  </div><!-- /screen -->
+
+  <!-- Tab bar -->
+  <div id="tabbar">
+    <button class="tab-btn active" data-tab="home">
+      <span class="icon">🏠</span>Waits
+    </button>
+    <button class="tab-btn" data-tab="parks">
+      <span class="icon">🗺️</span>Parks
+    </button>
+    <button class="tab-btn" data-tab="favorites">
+      <span class="icon">⭐</span>Favorites
+    </button>
+    <button class="tab-btn" data-tab="history">
+      <span class="icon">📅</span>History
+    </button>
+  </div>
+</div><!-- /app -->
+
+<script>
+// ── Constants ──────────────────────────────────────────────────────────────────
+const BASE = './data/';
+const PARKS = [
+  { id: 6, name: 'Magic Kingdom',     emoji: '🏰' },
+  { id: 5, name: 'EPCOT',             emoji: '🌍' },
+  { id: 7, name: 'Hollywood Studios', emoji: '🎬' },
+  { id: 8, name: 'Animal Kingdom',    emoji: '🦁'  },
+];
+const FAVS_KEY = 'waitmagic_favs';
+
+// ── State ──────────────────────────────────────────────────────────────────────
+let state = {
+  yesterdayRides: [],   // DailyRideSummary[]
+  todayRides:     [],   // DailyRideSummary[]
+  displayRides:   [],   // whichever we're showing
+  isYesterday:    false,
+  dataDate:       '',
+  favIds:         new Set(JSON.parse(localStorage.getItem(FAVS_KEY) || '[]')),
+  featuredRide:   null,
+  history:        [],   // array of { date, rides[] }
+  historyLoaded:  false,
+};
+
+// ── Service Worker ─────────────────────────────────────────────────────────────
+if ('serviceWorker' in navigator) {
+  navigator.serviceWorker.register('./sw.js');
+}
+
+// ── Helpers ───────────────────────────────────────────────────────────────────
+function waitColor(avg) {
+  if (avg < 20) return 'low';
+  if (avg < 45) return 'medium';
+  return 'high';
+}
+function waitLabel(avg) {
+  if (avg < 20) return 'Short';
+  if (avg < 45) return 'Moderate';
+  return 'Long';
+}
+function fmtDate(iso) {
+  // iso = "YYYY-MM-DD"
+  try {
+    const d = new Date(iso + 'T12:00:00');
+    return d.toLocaleDateString('en-US', { weekday: 'long', month: 'long', day: 'numeric' });
+  } catch { return iso; }
+}
+function today() {
+  return new Date().toISOString().slice(0, 10);
+}
+function yesterday() {
+  const d = new Date();
+  d.setDate(d.getDate() - 1);
+  return d.toISOString().slice(0, 10);
+}
+function saveFavs() {
+  localStorage.setItem(FAVS_KEY, JSON.stringify([...state.favIds]));
+}
+
+// Parse server JSON into flat ride array with computed stats
+function parseServerData(json) {
+  if (!json || !json.rides) return [];
+  return Object.values(json.rides).map(r => {
+    const wts = r.wait_times || [];
+    const avg = wts.length ? Math.round(wts.reduce((a,b) => a+b, 0) / wts.length) : 0;
+    return {
+      id:          r.id,
+      name:        r.name,
+      parkName:    r.park_name,
+      parkEmoji:   r.park_emoji,
+      averageWait: avg,
+      peakWait:    wts.length ? Math.max(...wts) : 0,
+      lowWait:     wts.length ? Math.min(...wts) : 0,
+      sampleCount: wts.length,
+    };
+  }).sort((a, b) => b.averageWait - a.averageWait);
+}
+
+// ── Data fetching ─────────────────────────────────────────────────────────────
+async function fetchJSON(url) {
+  const r = await fetch(url + '?t=' + Date.now());
+  if (!r.ok) throw new Error(r.status);
+  return r.json();
+}
+
+async function loadData() {
+  setRefreshing(true);
+
+  let yd = null, td = null;
+  try { yd = await fetchJSON(BASE + 'yesterday.json'); } catch {}
+  try { td = await fetchJSON(BASE + 'today.json');     } catch {}
+
+  state.yesterdayRides = yd ? parseServerData(yd) : [];
+  state.todayRides     = td ? parseServerData(td) : [];
+
+  if (state.yesterdayRides.length > 0) {
+    state.displayRides = state.yesterdayRides;
+    state.isYesterday  = true;
+    state.dataDate     = yd.date || yesterday();
+  } else if (state.todayRides.length > 0) {
+    state.displayRides = state.todayRides;
+    state.isYesterday  = false;
+    state.dataDate     = td.date || today();
+  } else {
+    state.displayRides = [];
+    state.dataDate     = '';
+  }
+
+  // Pick featured if we haven't yet (or re-pick on refresh)
+  if (state.displayRides.length > 0) {
+    state.featuredRide = state.displayRides[Math.floor(Math.random() * Math.min(10, state.displayRides.length))];
+  }
+
+  updateLastUpdatedLabel(td);
+  renderHome();
+  renderParks();
+  renderFavorites();
+
+  setRefreshing(false);
+}
+
+async function loadHistory() {
+  if (state.historyLoaded) return;
+  const results = [];
+
+  // Fetch yesterday + up to 6 more previous days
+  const dates = [];
+  for (let i = 1; i <= 7; i++) {
+    const d = new Date();
+    d.setDate(d.getDate() - i);
+    dates.push(d.toISOString().slice(0, 10));
+  }
+
+  await Promise.all(dates.map(async dt => {
+    try {
+      let json;
+      if (dt === yesterday()) {
+        json = await fetchJSON(BASE + 'yesterday.json');
+      } else {
+        json = await fetchJSON(BASE + dt + '.json');
+      }
+      const rides = parseServerData(json);
+      if (rides.length > 0) {
+        results.push({ date: json.date || dt, rides, sampleCount: json.sample_count || 0 });
+      }
+    } catch {}
+  }));
+
+  results.sort((a, b) => b.date.localeCompare(a.date));
+  state.history = results;
+  state.historyLoaded = true;
+  renderHistory();
+}
+
+// ── UI helpers ────────────────────────────────────────────────────────────────
+function setRefreshing(on) {
+  document.getElementById('refreshBtn').classList.toggle('spinning', on);
+}
+
+function updateLastUpdatedLabel(td) {
+  const el = document.getElementById('lastUpdatedLabel');
+  if (td && td.last_updated) {
+    try {
+      const d = new Date(td.last_updated);
+      el.textContent = 'Updated ' + d.toLocaleTimeString('en-US', { hour: 'numeric', minute: '2-digit' });
+    } catch { el.textContent = ''; }
+  } else {
+    el.textContent = 'No data yet';
+  }
+}
+
+function makeBanner(type, icon, text) {
+  return `<div class="banner ${type}">${icon} ${text}</div>`;
+}
+
+function makeRideRow(ride, showFav = true) {
+  const isFav = state.favIds.has(ride.id);
+  const color = waitColor(ride.averageWait);
+  return `
+    <div class="ride-row">
+      <div class="ride-info">
+        <div class="ride-name">${ride.parkEmoji} ${ride.name}</div>
+        <div class="ride-park">${ride.parkName}</div>
+      </div>
+      <div class="ride-wait">
+        <div class="wait-val" style="color:var(--${color === 'low' ? 'green' : color === 'medium' ? 'yellow' : 'red'})">${ride.averageWait}</div>
+        <div class="wait-unit">min avg</div>
+        <div class="wait-badge ${color}">${waitLabel(ride.averageWait)}</div>
+      </div>
+      ${showFav ? `<button class="fav-btn" data-rid="${ride.id}" title="Favorite">${isFav ? '⭐' : '☆'}</button>` : ''}
+    </div>`;
+}
+
+function makeFeaturedCard(ride) {
+  return `
+    <div class="featured-card">
+      <div class="featured-label">⭐ Ride of the Day</div>
+      <div class="featured-name">${ride.name}</div>
+      <div class="featured-park">${ride.parkEmoji} ${ride.parkName}</div>
+      <div class="featured-stats">
+        <div class="stat">
+          <div class="stat-val">${ride.averageWait}</div>
+          <div class="stat-label">Avg Wait</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">${ride.peakWait}</div>
+          <div class="stat-label">Peak</div>
+        </div>
+        <div class="stat">
+          <div class="stat-val">${ride.lowWait}</div>
+          <div class="stat-label">Low</div>
+        </div>
+        ${ride.sampleCount ? `<div class="stat"><div class="stat-val">${ride.sampleCount}</div><div class="stat-label">Samples</div></div>` : ''}
+      </div>
+    </div>`;
+}
+
+// ── Render functions ───────────────────────────────────────────────────────────
+
+function renderHome() {
+  const bannerEl   = document.getElementById('home-banner');
+  const featuredEl = document.getElementById('featured-wrap');
+  const ridesEl    = document.getElementById('home-rides');
+
+  if (state.displayRides.length === 0) {
+    bannerEl.innerHTML   = makeBanner('red', '⚠️', 'No data available. Try refreshing.');
+    featuredEl.innerHTML = '';
+    ridesEl.innerHTML    = '<div class="empty"><div class="icon">🎢</div>No ride data yet.</div>';
+    return;
+  }
+
+  if (state.isYesterday) {
+    bannerEl.innerHTML = makeBanner('green', '✅', `Yesterday's complete data — ${fmtDate(state.dataDate)}`);
+  } else {
+    bannerEl.innerHTML = makeBanner('yellow', '🔄', `Collecting today's data — ${fmtDate(state.dataDate)}`);
+  }
+
+  featuredEl.innerHTML = state.featuredRide ? makeFeaturedCard(state.featuredRide) : '';
+  ridesEl.innerHTML    = state.displayRides.map(r => makeRideRow(r)).join('');
+}
+
+function renderParks() {
+  const el = document.getElementById('parks-content');
+  if (state.displayRides.length === 0) {
+    el.innerHTML = '<div class="empty"><div class="icon">🗺️</div>No park data available.</div>';
+    return;
+  }
+
+  const byPark = {};
+  PARKS.forEach(p => { byPark[p.name] = { ...p, rides: [] }; });
+  state.displayRides.forEach(r => {
+    if (byPark[r.parkName]) byPark[r.parkName].rides.push(r);
+  });
+
+  el.innerHTML = PARKS.map(p => {
+    const park = byPark[p.name];
+    if (!park.rides.length) return '';
+    const avg = Math.round(park.rides.reduce((s, r) => s + r.averageWait, 0) / park.rides.length);
+    return `
+      <div class="park-section" id="park-${p.id}">
+        <div class="park-header" onclick="togglePark(${p.id})">
+          <span class="park-emoji">${p.emoji}</span>
+          <span class="park-name">${p.name}</span>
+          <span class="park-count">${park.rides.length} rides · ${avg} min avg</span>
+          <span class="park-chevron">›</span>
+        </div>
+        <div class="park-rides">
+          ${park.rides.map(r => makeRideRow(r)).join('')}
+        </div>
+      </div>`;
+  }).join('');
+}
+
+function renderFavorites() {
+  const el = document.getElementById('fav-content');
+  const favRides = state.displayRides.filter(r => state.favIds.has(r.id));
+  if (favRides.length === 0) {
+    el.innerHTML = `<div class="empty"><div class="icon">⭐</div>No favorites yet.<br><small>Tap the ☆ next to any ride.</small></div>`;
+    return;
+  }
+  el.innerHTML = `<div class="section-title">Your Favorites</div>` + favRides.map(r => makeRideRow(r)).join('');
+}
+
+function renderHistory() {
+  const el = document.getElementById('history-content');
+  if (state.history.length === 0) {
+    el.innerHTML = '<div class="empty"><div class="icon">📅</div>No history yet.<br><small>Data appears after the first full day of collection.</small></div>';
+    return;
+  }
+  el.innerHTML = state.history.map((day, i) => `
+    <div class="history-day" id="hday-${i}">
+      <div class="history-day-header" onclick="toggleHistoryDay(${i})">
+        <div>
+          <div class="history-day-title">${fmtDate(day.date)}</div>
+          <div class="history-day-sub">${day.rides.length} rides · ${day.sampleCount} samples</div>
+        </div>
+        <span class="history-day-chevron">›</span>
+      </div>
+      <div class="history-day-rides">
+        ${day.rides.slice(0, 30).map(r => makeRideRow(r, false)).join('')}
+      </div>
+    </div>`).join('');
+}
+
+// ── Interactions ───────────────────────────────────────────────────────────────
+
+function togglePark(id) {
+  document.getElementById('park-' + id).classList.toggle('open');
+}
+
+function toggleHistoryDay(i) {
+  document.getElementById('hday-' + i).classList.toggle('open');
+}
+
+// Favorite toggle — delegate from #screen
+document.getElementById('screen').addEventListener('click', e => {
+  const btn = e.target.closest('.fav-btn');
+  if (!btn) return;
+  const rid = parseInt(btn.dataset.rid, 10);
+  if (state.favIds.has(rid)) {
+    state.favIds.delete(rid);
+    btn.textContent = '☆';
+  } else {
+    state.favIds.add(rid);
+    btn.textContent = '⭐';
+  }
+  saveFavs();
+  renderFavorites();
+});
+
+// Tab switching
+document.querySelectorAll('.tab-btn').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const tab = btn.dataset.tab;
+    document.querySelectorAll('.tab-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    document.querySelectorAll('.page').forEach(p => p.classList.remove('active'));
+    document.getElementById('page-' + tab).classList.add('active');
+    if (tab === 'history' && !state.historyLoaded) loadHistory();
+  });
+});
+
+// Refresh button
+document.getElementById('refreshBtn').addEventListener('click', () => {
+  state.historyLoaded = false;
+  loadData();
+});
+
+// ── Boot ──────────────────────────────────────────────────────────────────────
+loadData();
+</script>
+</body>
+</html>

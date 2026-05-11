@@ -1,0 +1,18 @@
+{
+  "name": "Wait Magic",
+  "short_name": "Wait Magic",
+  "description": "Disney World wait times — yesterday's averages and live data",
+  "start_url": "./",
+  "display": "standalone",
+  "background_color": "#121212",
+  "theme_color": "#121212",
+  "orientation": "portrait",
+  "icons": [
+    {
+      "src": "icon.png",
+      "sizes": "1024x1024",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}
