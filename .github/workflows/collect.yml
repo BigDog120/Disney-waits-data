@@ -1,0 +1,41 @@
+name: Collect Disney Wait Times
+
+"on":
+  schedule:
+    # Run 5 minutes past every hour (UTC)
+    # Disney parks are ET — this covers full operating hours
+    - cron: '5 * * * *'
+  workflow_dispatch:
+    # Also lets you trigger a manual run from the GitHub Actions tab
+
+permissions:
+  contents: write   # needed to commit data files back to the repo
+
+jobs:
+  collect:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Check out repo
+        uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+
+      - name: Collect wait times
+        run: python collect.py
+
+      - name: Commit and push updated data
+        run: |
+          git config user.name  "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/
+          # Only commit if something actually changed
+          if git diff --staged --quiet; then
+            echo "No data changes — nothing to commit."
+          else
+            git commit -m "⏱️ Wait times $(date -u '+%Y-%m-%d %H:%M UTC')"
+            git push
+          fi
