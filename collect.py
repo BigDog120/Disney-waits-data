@@ -8,6 +8,7 @@ Fetches live wait times from Queue-Times API and builds a daily JSON dataset.
 import json
 import os
 import sys
+import time
 import urllib.request
 import urllib.error
 from datetime import datetime, timezone, date
@@ -26,13 +27,23 @@ DATA_DIR = "data"
 
 # ── Fetch ─────────────────────────────────────────────────────────────────────
 
-def fetch_park(park):
+def fetch_park(park, retries=3, backoff=5):
     url = BASE_URL.format(park["id"])
     req = urllib.request.Request(
         url, headers={"User-Agent": "WalkingWaitTimes/1.0"}
     )
-    with urllib.request.urlopen(req, timeout=30) as resp:
-        return json.loads(resp.read())
+    last_err = None
+    for attempt in range(1, retries + 1):
+        try:
+            with urllib.request.urlopen(req, timeout=30) as resp:
+                return json.loads(resp.read())
+        except Exception as e:
+            last_err = e
+            if attempt < retries:
+                wait = backoff * attempt
+                print(f"    ↩ Attempt {attempt} failed ({e}), retrying in {wait}s…")
+                time.sleep(wait)
+    raise last_err
 
 
 def extract_rides(raw, park):
