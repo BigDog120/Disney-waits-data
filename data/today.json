@@ -1,7 +1,7 @@
 {
   "date": "2026-05-31",
-  "sample_count": 1,
-  "last_updated": "2026-05-31T00:08:07Z",
+  "sample_count": 2,
+  "last_updated": "2026-05-31T05:24:13Z",
   "rides": {
     "134": {
       "id": 134,
@@ -432,6 +432,7 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -450,7 +451,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        50
+        50,
+        15
       ]
     },
     "117": {
@@ -459,7 +461,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        35
+        35,
+        5
       ]
     },
     "6368": {
@@ -468,7 +471,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        35
+        35,
+        15
       ]
     },
     "6369": {
@@ -486,6 +490,7 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
+        40,
         40
       ]
     },
@@ -495,7 +500,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        50
+        50,
+        5
       ]
     },
     "5476": {
@@ -504,7 +510,17 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        60
+        60,
+        15
+      ]
+    },
+    "16342": {
+      "id": 16342,
+      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        35
       ]
     }
   }
