@@ -1,7 +1,7 @@
 {
   "date": "2026-06-13",
-  "sample_count": 1,
-  "last_updated": "2026-06-13T04:38:44Z",
+  "sample_count": 2,
+  "last_updated": "2026-06-13T08:27:53Z",
   "rides": {
     "151": {
       "id": 151,
@@ -9,6 +9,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        50,
         50
       ]
     }
