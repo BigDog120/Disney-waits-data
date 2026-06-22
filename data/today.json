@@ -1,6 +1,61 @@
 {
   "date": "2026-06-22",
-  "sample_count": 0,
-  "last_updated": "2026-06-22T05:16:45Z",
-  "rides": {}
+  "sample_count": 1,
+  "last_updated": "2026-06-22T12:19:53Z",
+  "rides": {
+    "113": {
+      "id": 113,
+      "name": "Kilimanjaro Safaris",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        20
+      ]
+    },
+    "655": {
+      "id": 655,
+      "name": "Wildlife Express Train",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        5
+      ]
+    },
+    "116": {
+      "id": 116,
+      "name": "Meet Favorite Disney Pals at Adventurers Outpost",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        15
+      ]
+    },
+    "14943": {
+      "id": 14943,
+      "name": "Zootopia: Better Zoogether!",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
+      ]
+    },
+    "4439": {
+      "id": 4439,
+      "name": "Avatar Flight of Passage",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        110
+      ]
+    },
+    "4438": {
+      "id": 4438,
+      "name": "Na'vi River Journey",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        20
+      ]
+    }
+  }
 }
