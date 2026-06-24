@@ -1,7 +1,7 @@
 {
   "date": "2026-06-24",
   "sample_count": 1,
-  "last_updated": "2026-06-24T08:28:20Z",
+  "last_updated": "2026-06-24T11:51:00Z",
   "rides": {
     "134": {
       "id": 134,
@@ -496,6 +496,33 @@
       "park_emoji": "🎬",
       "wait_times": [
         90
+      ]
+    },
+    "14943": {
+      "id": 14943,
+      "name": "Zootopia: Better Zoogether!",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
+      ]
+    },
+    "4439": {
+      "id": 4439,
+      "name": "Avatar Flight of Passage",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        65
+      ]
+    },
+    "4438": {
+      "id": 4438,
+      "name": "Na'vi River Journey",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
       ]
     }
   }
