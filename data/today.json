@@ -1,7 +1,7 @@
 {
   "date": "2026-06-26",
-  "sample_count": 2,
-  "last_updated": "2026-06-26T09:42:13Z",
+  "sample_count": 3,
+  "last_updated": "2026-06-26T12:18:38Z",
   "rides": {
     "134": {
       "id": 134,
@@ -557,7 +557,8 @@
       "park_emoji": "🦁",
       "wait_times": [
         5,
-        5
+        5,
+        20
       ]
     },
     "110": {
@@ -566,6 +567,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -587,7 +589,8 @@
       "park_emoji": "🦁",
       "wait_times": [
         35,
-        35
+        35,
+        10
       ]
     },
     "14943": {
@@ -596,6 +599,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
+        10,
         10,
         10
       ]
@@ -607,7 +611,8 @@
       "park_emoji": "🦁",
       "wait_times": [
         35,
-        35
+        35,
+        50
       ]
     },
     "4438": {
@@ -617,6 +622,16 @@
       "park_emoji": "🦁",
       "wait_times": [
         5,
+        5,
+        15
+      ]
+    },
+    "655": {
+      "id": 655,
+      "name": "Wildlife Express Train",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
         5
       ]
     }
