@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
   "sample_count": 1,
-  "last_updated": "2026-07-02T00:16:17Z",
+  "last_updated": "2026-07-02T05:04:10Z",
   "rides": {
     "134": {
       "id": 134,
@@ -460,6 +460,15 @@
       "park_emoji": "🎬",
       "wait_times": [
         70
+      ]
+    },
+    "16545": {
+      "id": 16545,
+      "name": "Bluey's Wild World at Conservation Station",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
       ]
     }
   }
