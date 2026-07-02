@@ -1,7 +1,7 @@
 {
   "date": "2026-07-02",
   "sample_count": 1,
-  "last_updated": "2026-07-02T08:20:32Z",
+  "last_updated": "2026-07-02T11:39:44Z",
   "rides": {
     "134": {
       "id": 134,
@@ -465,6 +465,24 @@
     "16545": {
       "id": 16545,
       "name": "Bluey's Wild World at Conservation Station",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
+      ]
+    },
+    "4439": {
+      "id": 4439,
+      "name": "Avatar Flight of Passage",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        45
+      ]
+    },
+    "4438": {
+      "id": 4438,
+      "name": "Na'vi River Journey",
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
