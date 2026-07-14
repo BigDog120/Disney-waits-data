@@ -1,7 +1,7 @@
 {
   "date": "2026-07-14",
   "sample_count": 1,
-  "last_updated": "2026-07-14T09:10:10Z",
+  "last_updated": "2026-07-14T11:37:11Z",
   "rides": {
     "134": {
       "id": 134,
@@ -217,6 +217,33 @@
       "park_emoji": "🏰",
       "wait_times": [
         30
+      ]
+    },
+    "110": {
+      "id": 110,
+      "name": "Expedition Everest - Legend of the Forbidden Mountain",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        5
+      ]
+    },
+    "14943": {
+      "id": 14943,
+      "name": "Zootopia: Better Zoogether!",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
+      ]
+    },
+    "4439": {
+      "id": 4439,
+      "name": "Avatar Flight of Passage",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        45
       ]
     }
   }
