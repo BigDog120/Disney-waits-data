@@ -1,7 +1,7 @@
 {
   "date": "2026-07-24",
-  "sample_count": 1,
-  "last_updated": "2026-07-24T00:07:31Z",
+  "sample_count": 2,
+  "last_updated": "2026-07-24T04:20:10Z",
   "rides": {
     "134": {
       "id": 134,
@@ -297,7 +297,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        85
+        85,
+        30
       ]
     },
     "158": {
@@ -306,6 +307,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -315,7 +317,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        70
+        70,
+        30
       ]
     },
     "16467": {
@@ -324,7 +327,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        45
+        45,
+        15
       ]
     },
     "153": {
@@ -333,7 +337,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        15
+        15,
+        5
       ]
     },
     "152": {
@@ -360,7 +365,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        50
+        50,
+        10
       ]
     },
     "466": {
@@ -378,7 +384,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        50
+        50,
+        10
       ]
     },
     "120": {
@@ -469,6 +476,24 @@
       "park_emoji": "🎬",
       "wait_times": [
         70
+      ]
+    },
+    "155": {
+      "id": 155,
+      "name": "Journey Into Imagination With Figment",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        5
+      ]
+    },
+    "156": {
+      "id": 156,
+      "name": "Living with the Land",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        5
       ]
     }
   }
