@@ -1,7 +1,7 @@
 {
   "date": "2026-08-10",
   "sample_count": 1,
-  "last_updated": "2026-08-10T10:23:55Z",
+  "last_updated": "2026-08-10T11:53:16Z",
   "rides": {
     "134": {
       "id": 134,
@@ -190,6 +190,33 @@
       "park_emoji": "🏰",
       "wait_times": [
         65
+      ]
+    },
+    "110": {
+      "id": 110,
+      "name": "Expedition Everest - Legend of the Forbidden Mountain",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        5
+      ]
+    },
+    "4439": {
+      "id": 4439,
+      "name": "Avatar Flight of Passage",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        65
+      ]
+    },
+    "4438": {
+      "id": 4438,
+      "name": "Na'vi River Journey",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        10
       ]
     }
   }
