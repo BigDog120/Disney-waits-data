@@ -1,7 +1,7 @@
 {
   "date": "2026-08-15",
-  "sample_count": 2,
-  "last_updated": "2026-08-15T02:57:48Z",
+  "sample_count": 3,
+  "last_updated": "2026-08-15T03:45:47Z",
   "rides": {
     "134": {
       "id": 134,
@@ -10,6 +10,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
+        5,
         5
       ]
     },
@@ -19,6 +20,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -30,6 +32,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        5,
         5
       ]
     },
@@ -39,6 +42,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -50,6 +54,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        5,
         5
       ]
     },
@@ -59,6 +64,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -70,6 +76,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        5,
         5
       ]
     },
@@ -80,7 +87,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        15
+        15,
+        5
       ]
     },
     "161": {
@@ -89,6 +97,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -100,7 +109,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         25,
-        20
+        20,
+        7
       ]
     },
     "126": {
@@ -109,6 +119,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -120,6 +131,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
+        5,
         5
       ]
     },
@@ -129,6 +141,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -140,6 +153,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         25,
+        15,
         15
       ]
     },
@@ -149,6 +163,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -160,6 +175,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         20,
+        10,
         10
       ]
     },
@@ -169,6 +185,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -180,7 +197,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        10
+        10,
+        5
       ]
     },
     "138": {
@@ -200,6 +218,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        5,
         5
       ]
     },
@@ -209,6 +228,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -220,7 +240,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         30,
-        30
+        30,
+        25
       ]
     },
     "14928": {
