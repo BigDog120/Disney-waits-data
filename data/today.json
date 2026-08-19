@@ -1,7 +1,7 @@
 {
   "date": "2026-08-19",
   "sample_count": 3,
-  "last_updated": "2026-08-19T10:35:27Z",
+  "last_updated": "2026-08-19T11:32:00Z",
   "rides": {
     "134": {
       "id": 134,
@@ -338,6 +338,24 @@
       "name": "\"it's a small world\"",
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
+      "wait_times": [
+        5
+      ]
+    },
+    "4439": {
+      "id": 4439,
+      "name": "Avatar Flight of Passage",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        45
+      ]
+    },
+    "4438": {
+      "id": 4438,
+      "name": "Na'vi River Journey",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
       "wait_times": [
         5
       ]
