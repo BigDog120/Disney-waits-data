@@ -1,7 +1,7 @@
 {
   "date": "2026-09-13",
-  "sample_count": 2,
-  "last_updated": "2026-09-13T05:54:11Z",
+  "sample_count": 3,
+  "last_updated": "2026-09-13T11:35:37Z",
   "rides": {
     "134": {
       "id": 134,
@@ -471,6 +471,7 @@
       "park_emoji": "🦁",
       "wait_times": [
         30,
+        30,
         30
       ]
     },
@@ -482,6 +483,15 @@
       "wait_times": [
         10,
         10
+      ]
+    },
+    "14943": {
+      "id": 14943,
+      "name": "Zootopia: Better Zoogether!",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        15
       ]
     }
   }
