@@ -1,7 +1,7 @@
 {
   "date": "2026-10-16",
-  "sample_count": 2,
-  "last_updated": "2026-10-16T12:13:56Z",
+  "sample_count": 3,
+  "last_updated": "2026-10-16T17:17:47Z",
   "rides": {
     "134": {
       "id": 134,
@@ -10,7 +10,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        10
+        10,
+        35
       ]
     },
     "137": {
@@ -20,7 +21,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        5
+        5,
+        25
       ]
     },
     "355": {
@@ -29,6 +31,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -40,6 +43,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        5,
         5
       ]
     },
@@ -50,7 +54,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        10
       ]
     },
     "132": {
@@ -59,6 +64,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -70,7 +76,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        10
       ]
     },
     "136": {
@@ -80,7 +87,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         35,
-        15
+        15,
+        55
       ]
     },
     "161": {
@@ -89,6 +97,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -100,7 +109,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         40,
-        40
+        40,
+        45
       ]
     },
     "126": {
@@ -109,6 +119,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -120,7 +131,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         20,
-        10
+        10,
+        30
       ]
     },
     "127": {
@@ -130,7 +142,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        10
       ]
     },
     "130": {
@@ -139,7 +152,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        15
+        15,
+        30
       ]
     },
     "13630": {
@@ -148,7 +162,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        15
+        15,
+        40
       ]
     },
     "140": {
@@ -157,7 +172,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        30
+        30,
+        40
       ]
     },
     "248": {
@@ -167,7 +183,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        15
       ]
     },
     "131": {
@@ -177,7 +194,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        5
+        5,
+        30
       ]
     },
     "138": {
@@ -187,7 +205,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        15
+        15,
+        20
       ]
     },
     "143": {
@@ -197,7 +216,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        10
+        10,
+        5
       ]
     },
     "1190": {
@@ -207,7 +227,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        15
       ]
     },
     "11527": {
@@ -216,7 +237,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        35
+        35,
+        60
       ]
     },
     "17526": {
@@ -252,6 +274,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -261,7 +284,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        5
+        5,
+        20
       ]
     },
     "117": {
@@ -270,7 +294,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        10
+        10,
+        35
       ]
     },
     "6368": {
@@ -279,7 +304,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        15
+        15,
+        45
       ]
     },
     "16342": {
@@ -288,7 +314,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        35
+        35,
+        60
       ]
     },
     "123": {
@@ -297,7 +324,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        13
+        13,
+        30
       ]
     },
     "5477": {
@@ -306,7 +334,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        5
+        5,
+        45
       ]
     },
     "5476": {
@@ -315,7 +344,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        75
+        75,
+        65
       ]
     },
     "110": {
@@ -333,7 +363,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        10
+        10,
+        30
       ]
     },
     "14943": {
@@ -342,7 +373,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        10
+        10,
+        15
       ]
     },
     "4439": {
@@ -351,7 +383,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        55
+        55,
+        65
       ]
     },
     "4438": {
@@ -360,7 +393,314 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
+        15,
+        55
+      ]
+    },
+    "334": {
+      "id": 334,
+      "name": "Walt Disney's Enchanted Tiki Room",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "128": {
+      "id": 128,
+      "name": "Enchanted Tales with Belle",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "147": {
+      "id": 147,
+      "name": "Meet Ariel at Her Grotto",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        35
+      ]
+    },
+    "6700": {
+      "id": 6700,
+      "name": "Meet Cinderella and a Visiting Princess at Princess Fairytale Hall",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        20
+      ]
+    },
+    "144": {
+      "id": 144,
+      "name": "Meet Daring Disney Pals as Circus Stars at Pete's Silly Sideshow",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
         15
+      ]
+    },
+    "145": {
+      "id": 145,
+      "name": "Meet Dashing Disney Pals as Circus Stars at Pete's Silly Sideshow",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        20
+      ]
+    },
+    "6699": {
+      "id": 6699,
+      "name": "Meet Princess Tiana and a Visiting Princess at Princess Fairytale Hall",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        30
+      ]
+    },
+    "1214": {
+      "id": 1214,
+      "name": "Country Bear Musical Jamboree",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "146": {
+      "id": 146,
+      "name": "Meet Mickey at Town Square Theater",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        15
+      ]
+    },
+    "125": {
+      "id": 125,
+      "name": "Monsters, Inc. Laugh Floor",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "155": {
+      "id": 155,
+      "name": "Journey Into Imagination With Figment",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        15
+      ]
+    },
+    "13627": {
+      "id": 13627,
+      "name": "Meet Beloved Disney Pals at Mickey & Friends",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        20
+      ]
+    },
+    "159": {
+      "id": 159,
+      "name": "Spaceship Earth",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        20
+      ]
+    },
+    "10093": {
+      "id": 10093,
+      "name": "Guardians of the Galaxy: Cosmic Rewind",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        70
+      ]
+    },
+    "158": {
+      "id": 158,
+      "name": "Mission: SPACE",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        15
+      ]
+    },
+    "160": {
+      "id": 160,
+      "name": "Test Track",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        60
+      ]
+    },
+    "156": {
+      "id": 156,
+      "name": "Living with the Land",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        10
+      ]
+    },
+    "16467": {
+      "id": 16467,
+      "name": "Soarin' Across America",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        60
+      ]
+    },
+    "153": {
+      "id": 153,
+      "name": "The Seas with Nemo & Friends",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        40
+      ]
+    },
+    "152": {
+      "id": 152,
+      "name": "Turtle Talk With Crush",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        15
+      ]
+    },
+    "829": {
+      "id": 829,
+      "name": "Canada Far and Wide in Circle-Vision 360",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        15
+      ]
+    },
+    "2679": {
+      "id": 2679,
+      "name": "Frozen Ever After",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        80
+      ]
+    },
+    "466": {
+      "id": 466,
+      "name": "Gran Fiesta Tour Starring The Three Caballeros",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        10
+      ]
+    },
+    "6701": {
+      "id": 6701,
+      "name": "Meet Anna and Elsa at Royal Sommerhus",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        30
+      ]
+    },
+    "8956": {
+      "id": 8956,
+      "name": "Remy's Ratatouille Adventure",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        55
+      ]
+    },
+    "6704": {
+      "id": 6704,
+      "name": "Meet Disney Stars at Red Carpet Dreams",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        25
+      ]
+    },
+    "6703": {
+      "id": 6703,
+      "name": "Meet Olaf at Celebrity Spotlight",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        20
+      ]
+    },
+    "7333": {
+      "id": 7333,
+      "name": "Vacation Fun - An Original Animated Short with Mickey & Minnie",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        10
+      ]
+    },
+    "6361": {
+      "id": 6361,
+      "name": "Mickey & Minnie's Runaway Railway",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        75
+      ]
+    },
+    "12425": {
+      "id": 12425,
+      "name": "Meet Edna Mode at the Edna Mode Experience",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        15
+      ]
+    },
+    "6369": {
+      "id": 6369,
+      "name": "Star Wars: Rise of the Resistance",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        105
+      ]
+    },
+    "113": {
+      "id": 113,
+      "name": "Kilimanjaro Safaris",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        45
+      ]
+    },
+    "655": {
+      "id": 655,
+      "name": "Wildlife Express Train",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        30
+      ]
+    },
+    "112": {
+      "id": 112,
+      "name": "Kali River Rapids",
+      "park_name": "Animal Kingdom",
+      "park_emoji": "🦁",
+      "wait_times": [
+        45
       ]
     }
   }
