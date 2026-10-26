@@ -1,7 +1,7 @@
 {
   "date": "2026-10-26",
-  "sample_count": 1,
-  "last_updated": "2026-10-26T00:02:42Z",
+  "sample_count": 2,
+  "last_updated": "2026-10-26T04:31:53Z",
   "rides": {
     "134": {
       "id": 134,
@@ -234,7 +234,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        15
+        15,
+        5
       ]
     },
     "10093": {
@@ -243,7 +244,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        95
+        95,
+        50
       ]
     },
     "158": {
@@ -270,7 +272,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        15
+        15,
+        5
       ]
     },
     "16467": {
@@ -279,7 +282,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        40
+        40,
+        10
       ]
     },
     "153": {
@@ -315,7 +319,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        55
+        55,
+        35
       ]
     },
     "466": {
@@ -324,7 +329,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        15
+        15,
+        5
       ]
     },
     "8956": {
@@ -333,7 +339,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        70
+        70,
+        5
       ]
     },
     "120": {
