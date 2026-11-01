@@ -1,7 +1,7 @@
 {
   "date": "2026-11-01",
-  "sample_count": 2,
-  "last_updated": "2026-11-01T15:57:10Z",
+  "sample_count": 3,
+  "last_updated": "2026-11-01T20:24:39Z",
   "rides": {
     "134": {
       "id": 134,
@@ -10,7 +10,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
-        35
+        35,
+        20
       ]
     },
     "137": {
@@ -19,6 +20,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        10,
         10,
         10
       ]
@@ -30,6 +32,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        5,
         5
       ]
     },
@@ -40,7 +43,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        20
       ]
     },
     "133": {
@@ -50,7 +54,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        10
       ]
     },
     "132": {
@@ -59,6 +64,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -70,7 +76,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        10
       ]
     },
     "136": {
@@ -80,6 +87,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         20,
+        40,
         40
       ]
     },
@@ -90,7 +98,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         25,
-        45
+        45,
+        40
       ]
     },
     "126": {
@@ -100,6 +109,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        10,
         10
       ]
     },
@@ -110,7 +120,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
-        15
+        15,
+        35
       ]
     },
     "127": {
@@ -120,7 +131,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        15
+        15,
+        20
       ]
     },
     "130": {
@@ -130,6 +142,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
+        20,
         20
       ]
     },
@@ -140,7 +153,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        35
+        35,
+        40
       ]
     },
     "140": {
@@ -150,7 +164,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         15,
-        13
+        13,
+        20
       ]
     },
     "248": {
@@ -160,6 +175,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
+        15,
         15
       ]
     },
@@ -170,7 +186,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
-        30
+        30,
+        25
       ]
     },
     "138": {
@@ -180,7 +197,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         25,
-        15
+        15,
+        25
       ]
     },
     "143": {
@@ -190,7 +208,8 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5
+        5,
+        10
       ]
     },
     "1190": {
@@ -199,6 +218,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5,
         5
       ]
@@ -210,6 +230,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         20,
+        50,
         50
       ]
     },
@@ -246,6 +267,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        10,
         10
       ]
     },
@@ -255,7 +277,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        15
+        15,
+        10
       ]
     },
     "147": {
@@ -264,7 +287,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        10
+        10,
+        20
       ]
     },
     "6700": {
@@ -273,6 +297,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -282,6 +307,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -291,6 +317,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        20,
         20
       ]
     },
@@ -300,7 +327,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        20
+        20,
+        30
       ]
     },
     "171": {
@@ -309,6 +337,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        10,
         10
       ]
     },
@@ -318,6 +347,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -327,6 +357,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -336,6 +367,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        10,
         10
       ]
     },
@@ -345,6 +377,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -354,7 +387,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        25
+        25,
+        10
       ]
     },
     "1189": {
@@ -363,6 +397,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -372,6 +407,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
+        10,
         10
       ]
     },
@@ -381,6 +417,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -390,6 +427,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -399,7 +437,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        20
+        20,
+        15
       ]
     },
     "10093": {
@@ -408,7 +447,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        65
+        65,
+        70
       ]
     },
     "158": {
@@ -417,6 +457,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -435,6 +476,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -444,7 +486,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        35
+        35,
+        25
       ]
     },
     "153": {
@@ -453,6 +496,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -462,6 +506,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        15,
         15
       ]
     },
@@ -471,6 +516,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -480,7 +526,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        40
+        40,
+        50
       ]
     },
     "466": {
@@ -489,6 +536,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -498,7 +546,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        30
+        30,
+        25
       ]
     },
     "8956": {
@@ -507,7 +556,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        20
+        20,
+        35
       ]
     },
     "6704": {
@@ -516,7 +566,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        20
+        20,
+        25
       ]
     },
     "6703": {
@@ -525,7 +576,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        10
+        10,
+        15
       ]
     },
     "120": {
@@ -534,7 +586,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        20
+        20,
+        10
       ]
     },
     "7333": {
@@ -543,6 +596,7 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
+        10,
         10
       ]
     },
@@ -552,7 +606,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        30
+        30,
+        35
       ]
     },
     "117": {
@@ -561,7 +616,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        35
+        35,
+        30
       ]
     },
     "6368": {
@@ -570,7 +626,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        45
+        45,
+        30
       ]
     },
     "6369": {
@@ -579,7 +636,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        30
+        30,
+        50
       ]
     },
     "16342": {
@@ -597,7 +655,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        45
+        45,
+        35
       ]
     },
     "5477": {
@@ -606,6 +665,7 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
+        20,
         20
       ]
     },
@@ -615,7 +675,8 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        70
+        70,
+        55
       ]
     },
     "651": {
@@ -624,6 +685,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -633,7 +695,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        35
+        35,
+        10
       ]
     },
     "655": {
@@ -642,6 +705,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -651,7 +715,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        20
+        20,
+        5
       ]
     },
     "112": {
@@ -660,6 +725,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
+        5,
         5
       ]
     },
@@ -669,7 +735,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        10
+        10,
+        30
       ]
     },
     "116": {
@@ -678,7 +745,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        10
+        10,
+        30
       ]
     },
     "14943": {
@@ -687,7 +755,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        15
+        15,
+        10
       ]
     },
     "4439": {
@@ -696,7 +765,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        60
+        60,
+        30
       ]
     },
     "4438": {
@@ -705,7 +775,8 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        40
+        40,
+        30
       ]
     }
   }
