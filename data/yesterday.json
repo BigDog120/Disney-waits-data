@@ -1,7 +1,7 @@
 {
-  "date": "2026-11-08",
-  "sample_count": 3,
-  "last_updated": "2026-11-08T21:01:07Z",
+  "date": "2026-11-09",
+  "sample_count": 2,
+  "last_updated": "2026-11-09T18:38:26Z",
   "rides": {
     "137": {
       "id": 137,
@@ -9,9 +9,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        15,
-        15,
-        10
+        10,
+        15
       ]
     },
     "355": {
@@ -20,7 +19,6 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        5,
         5,
         5
       ]
@@ -32,19 +30,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        5,
         10
-      ]
-    },
-    "334": {
-      "id": 334,
-      "name": "Walt Disney's Enchanted Tiki Room",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        10,
-        10,
-        5
       ]
     },
     "133": {
@@ -53,9 +39,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        5,
-        10,
-        5
+        15,
+        10
       ]
     },
     "132": {
@@ -64,9 +49,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        20,
-        15,
-        10
+        5,
+        5
       ]
     },
     "135": {
@@ -76,18 +60,6 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        10,
-        5
-      ]
-    },
-    "171": {
-      "id": 171,
-      "name": "Mickey's PhilharMagic",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        10,
         10
       ]
     },
@@ -97,9 +69,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        30,
-        60,
-        50
+        25,
+        40
       ]
     },
     "161": {
@@ -109,8 +80,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         5,
-        10,
-        5
+        10
       ]
     },
     "129": {
@@ -119,9 +89,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        35,
-        55,
-        40
+        30,
+        35
       ]
     },
     "126": {
@@ -130,8 +99,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        10,
-        10,
+        5,
         10
       ]
     },
@@ -141,9 +109,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        25,
-        30,
-        25
+        15,
+        30
       ]
     },
     "127": {
@@ -152,9 +119,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        15,
-        15,
-        10
+        5,
+        5
       ]
     },
     "130": {
@@ -163,20 +129,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        30,
-        25,
+        5,
         25
-      ]
-    },
-    "1214": {
-      "id": 1214,
-      "name": "Country Bear Musical Jamboree",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        10,
-        10,
-        10
       ]
     },
     "140": {
@@ -185,20 +139,17 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        25,
-        30,
-        25
+        15,
+        40
       ]
     },
-    "146": {
-      "id": 146,
-      "name": "Meet Mickey at Town Square Theater",
+    "15395": {
+      "id": 15395,
+      "name": "Meet Santa Jack and Sally at Mickey’s Very Merry Christmas Party",
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        15,
-        20,
-        5
+        30
       ]
     },
     "248": {
@@ -207,9 +158,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        20,
-        10,
-        10
+        5,
+        5
       ]
     },
     "131": {
@@ -218,9 +168,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        60,
-        30,
-        25
+        20,
+        65
       ]
     },
     "125": {
@@ -229,7 +178,6 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        10,
         10,
         10
       ]
@@ -240,9 +188,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        35,
         25,
-        15
+        5
       ]
     },
     "143": {
@@ -252,8 +199,7 @@
       "park_emoji": "🏰",
       "wait_times": [
         10,
-        10,
-        10
+        5
       ]
     },
     "1190": {
@@ -262,8 +208,7 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        25,
-        15,
+        5,
         10
       ]
     },
@@ -273,197 +218,8 @@
       "park_name": "Magic Kingdom",
       "park_emoji": "🏰",
       "wait_times": [
-        95,
-        40,
-        35
-      ]
-    },
-    "120": {
-      "id": 120,
-      "name": "Star Tours – The Adventures Continue",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        5,
-        25,
-        30
-      ]
-    },
-    "6361": {
-      "id": 6361,
-      "name": "Mickey & Minnie's Runaway Railway",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        5,
-        65,
-        45
-      ]
-    },
-    "117": {
-      "id": 117,
-      "name": "Toy Story Mania!",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        15,
-        65,
-        45
-      ]
-    },
-    "6368": {
-      "id": 6368,
-      "name": "Millennium Falcon: Smugglers Run",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        20,
-        65,
-        45
-      ]
-    },
-    "6369": {
-      "id": 6369,
-      "name": "Star Wars: Rise of the Resistance",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        35,
-        95
-      ]
-    },
-    "16342": {
-      "id": 16342,
-      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        30,
-        55,
-        45
-      ]
-    },
-    "123": {
-      "id": 123,
-      "name": "The Twilight Zone™ Tower of Terror",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        13,
-        40,
-        35
-      ]
-    },
-    "5477": {
-      "id": 5477,
-      "name": "Alien Swirling Saucers",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        5,
-        50,
-        20
-      ]
-    },
-    "5476": {
-      "id": 5476,
-      "name": "Slinky Dog Dash",
-      "park_name": "Hollywood Studios",
-      "park_emoji": "🎬",
-      "wait_times": [
-        30,
-        75,
-        60
-      ]
-    },
-    "128": {
-      "id": 128,
-      "name": "Enchanted Tales with Belle",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        15
-      ]
-    },
-    "147": {
-      "id": 147,
-      "name": "Meet Ariel at Her Grotto",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        15
-      ]
-    },
-    "6699": {
-      "id": 6699,
-      "name": "Meet Cinderella and Princess Tiana at Princess Fairytale Hall",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        25,
-        15
-      ]
-    },
-    "144": {
-      "id": 144,
-      "name": "Meet Daring Disney Pals as Circus Stars at Pete's Silly Sideshow",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        10,
-        15
-      ]
-    },
-    "145": {
-      "id": 145,
-      "name": "Meet Dashing Disney Pals as Circus Stars at Pete's Silly Sideshow",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        25
-      ]
-    },
-    "6700": {
-      "id": 6700,
-      "name": "Meet Visiting Princesses at Princess Fairytale Hall",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        25,
-        15
-      ]
-    },
-    "1181": {
-      "id": 1181,
-      "name": "Walt Disney World Railroad - Fantasyland",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        15
-      ]
-    },
-    "356": {
-      "id": 356,
-      "name": "The Hall of Presidents",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        15
-      ]
-    },
-    "1189": {
-      "id": 1189,
-      "name": "Walt Disney World Railroad - Main Street, U.S.A.",
-      "park_name": "Magic Kingdom",
-      "park_emoji": "🏰",
-      "wait_times": [
-        15,
-        15
+        45,
+        40
       ]
     },
     "155": {
@@ -472,6 +228,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
+        5,
         15
       ]
     },
@@ -481,8 +238,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        15,
-        15
+        30,
+        20
       ]
     },
     "159": {
@@ -491,8 +248,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        30,
-        15
+        10,
+        35
       ]
     },
     "10093": {
@@ -501,8 +258,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        60,
-        75
+        90,
+        60
       ]
     },
     "158": {
@@ -521,7 +278,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        55
+        90,
+        50
       ]
     },
     "156": {
@@ -530,8 +288,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        25,
-        15
+        5,
+        20
       ]
     },
     "16467": {
@@ -540,8 +298,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        30,
-        60
+        20,
+        15
       ]
     },
     "153": {
@@ -550,8 +308,8 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        30,
-        5
+        5,
+        20
       ]
     },
     "152": {
@@ -580,8 +338,7 @@
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        55,
-        60
+        70
       ]
     },
     "466": {
@@ -594,24 +351,14 @@
         10
       ]
     },
-    "6701": {
-      "id": 6701,
-      "name": "Meet Anna and Elsa at Royal Sommerhus",
-      "park_name": "EPCOT",
-      "park_emoji": "🌍",
-      "wait_times": [
-        75,
-        45
-      ]
-    },
     "8956": {
       "id": 8956,
       "name": "Remy's Ratatouille Adventure",
       "park_name": "EPCOT",
       "park_emoji": "🌍",
       "wait_times": [
-        55,
-        50
+        50,
+        60
       ]
     },
     "6704": {
@@ -620,18 +367,18 @@
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        30,
+        25,
         35
       ]
     },
-    "6703": {
-      "id": 6703,
-      "name": "Meet Olaf at Celebrity Spotlight",
+    "120": {
+      "id": 120,
+      "name": "Star Tours – The Adventures Continue",
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        30,
-        15
+        15,
+        35
       ]
     },
     "7333": {
@@ -644,24 +391,228 @@
         10
       ]
     },
-    "12425": {
-      "id": 12425,
-      "name": "Meet Edna Mode at the Edna Mode Experience",
+    "6361": {
+      "id": 6361,
+      "name": "Mickey & Minnie's Runaway Railway",
       "park_name": "Hollywood Studios",
       "park_emoji": "🎬",
       "wait_times": [
-        15,
+        40,
+        35
+      ]
+    },
+    "117": {
+      "id": 117,
+      "name": "Toy Story Mania!",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        30,
+        45
+      ]
+    },
+    "6368": {
+      "id": 6368,
+      "name": "Millennium Falcon: Smugglers Run",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        35,
+        55
+      ]
+    },
+    "6369": {
+      "id": 6369,
+      "name": "Star Wars: Rise of the Resistance",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        70,
+        60
+      ]
+    },
+    "16342": {
+      "id": 16342,
+      "name": "Rock ’n’ Roller Coaster Starring The Muppets",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        55,
+        55
+      ]
+    },
+    "123": {
+      "id": 123,
+      "name": "The Twilight Zone™ Tower of Terror",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        55,
+        20
+      ]
+    },
+    "5477": {
+      "id": 5477,
+      "name": "Alien Swirling Saucers",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        35,
+        25
+      ]
+    },
+    "5476": {
+      "id": 5476,
+      "name": "Slinky Dog Dash",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        45,
+        70
+      ]
+    },
+    "334": {
+      "id": 334,
+      "name": "Walt Disney's Enchanted Tiki Room",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "128": {
+      "id": 128,
+      "name": "Enchanted Tales with Belle",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
         15
       ]
     },
-    "651": {
-      "id": 651,
-      "name": "Gorilla Falls Exploration Trail",
-      "park_name": "Animal Kingdom",
-      "park_emoji": "🦁",
+    "147": {
+      "id": 147,
+      "name": "Meet Ariel at Her Grotto",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
       "wait_times": [
-        5,
+        20
+      ]
+    },
+    "6699": {
+      "id": 6699,
+      "name": "Meet Cinderella and Princess Tiana at Princess Fairytale Hall",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        25
+      ]
+    },
+    "144": {
+      "id": 144,
+      "name": "Meet Daring Disney Pals as Circus Stars at Pete's Silly Sideshow",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
         5
+      ]
+    },
+    "145": {
+      "id": 145,
+      "name": "Meet Dashing Disney Pals as Circus Stars at Pete's Silly Sideshow",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        20
+      ]
+    },
+    "6700": {
+      "id": 6700,
+      "name": "Meet Visiting Princesses at Princess Fairytale Hall",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        20
+      ]
+    },
+    "171": {
+      "id": 171,
+      "name": "Mickey's PhilharMagic",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "1181": {
+      "id": 1181,
+      "name": "Walt Disney World Railroad - Fantasyland",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        20
+      ]
+    },
+    "1214": {
+      "id": 1214,
+      "name": "Country Bear Musical Jamboree",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        10
+      ]
+    },
+    "356": {
+      "id": 356,
+      "name": "The Hall of Presidents",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        15
+      ]
+    },
+    "146": {
+      "id": 146,
+      "name": "Meet Mickey at Town Square Theater",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        5
+      ]
+    },
+    "1189": {
+      "id": 1189,
+      "name": "Walt Disney World Railroad - Main Street, U.S.A.",
+      "park_name": "Magic Kingdom",
+      "park_emoji": "🏰",
+      "wait_times": [
+        20
+      ]
+    },
+    "12387": {
+      "id": 12387,
+      "name": "Journey of Water, Inspired by Moana",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        5
+      ]
+    },
+    "6701": {
+      "id": 6701,
+      "name": "Meet Anna and Elsa at Royal Sommerhus",
+      "park_name": "EPCOT",
+      "park_emoji": "🌍",
+      "wait_times": [
+        35
+      ]
+    },
+    "6703": {
+      "id": 6703,
+      "name": "Meet Olaf at Celebrity Spotlight",
+      "park_name": "Hollywood Studios",
+      "park_emoji": "🎬",
+      "wait_times": [
+        30
       ]
     },
     "113": {
@@ -670,8 +621,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        75,
-        30
+        40
       ]
     },
     "655": {
@@ -680,7 +630,6 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        40,
         5
       ]
     },
@@ -690,7 +639,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        25
+        20
       ]
     },
     "112": {
@@ -699,7 +648,6 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        15,
         5
       ]
     },
@@ -709,8 +657,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        15,
-        15
+        35
       ]
     },
     "116": {
@@ -719,8 +666,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        10,
-        30
+        25
       ]
     },
     "14943": {
@@ -729,8 +675,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        10,
-        10
+        25
       ]
     },
     "4439": {
@@ -739,8 +684,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        40,
-        45
+        40
       ]
     },
     "4438": {
@@ -749,8 +693,7 @@
       "park_name": "Animal Kingdom",
       "park_emoji": "🦁",
       "wait_times": [
-        45,
-        40
+        30
       ]
     }
   }
